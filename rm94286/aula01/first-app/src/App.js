@@ -1,26 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import ListaAluno from './components/ListaAluno';
+import imagem from './img/imagem.png';
 
 function App() {
+
+  const aluno = 'Leonardo Ramos';
+  const curso = 'ADS';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <p>Hello, World!</p>
-      
-    </div>
+    <>
+      <h1>TDS FIAP - RWD</h1>
+      <img src={imagem} width="100px" alt="Logo React" />
+      <p>Aluno: {aluno}</p>
+      <p>Curso: {curso}</p>
+      <ListaAluno />
+    </>
   );
 }
 
